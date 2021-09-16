@@ -4,19 +4,36 @@ public class Circle {
 
   public Circle() {
     radius = 1.0;
-    color = "red";
+    color = "Red";
   }
 
   public Circle(double r) {
     radius = r;
-    color = "red";
+    color = "Red";
+  }
+
+  public Circle(double r, String c) {
+    radius = r;
+    color = c;
   }
 
   public double getRadius() {
     return radius;
   }
 
+  public String getColor() {
+    return color;
+  }
+
   public double getArea() {
     return (radius * radius * Math.PI);
+  }
+
+  public void setRadius(double newRadius) {
+    radius = newRadius;
+  }
+
+  public void setColor(String newColor) {
+    color = newColor;
   }
 }
