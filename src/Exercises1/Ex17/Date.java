@@ -43,12 +43,11 @@ public class Date {
   }
 
   public String toString() {
-    if (month >9) {
-      return "0" + day + "/" + month + "/" + year;
-    }
-    else {
-      return "0" + day + "/0" + month + "/" + year;
-    }
+    String fday = String.format("%02d", day);
+    String fmonth = String.format("%02d", month);
+
+
+    return fday + "/" + fmonth + "/" + year;
   }
 
 
