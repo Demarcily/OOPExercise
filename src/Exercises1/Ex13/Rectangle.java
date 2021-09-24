@@ -1,3 +1,5 @@
+package Exercises1.Ex13;
+
 public class Rectangle {
   private float length;
   private float width;
@@ -37,6 +39,6 @@ public class Rectangle {
   }
 
   public String toString() {
-    return "Rectangle [length=" + length + " width=" + width + "]";
+    return "Exercises1.Ex13.Rectangle [length=" + length + " width=" + width + "]";
   }
 }

@@ -1,3 +1,5 @@
+package Exercises1.Ex14;
+
 public class Employee {
   private int id;
   private String firstname;
@@ -41,7 +43,7 @@ public class Employee {
   }
 
   public String toString() {
-    return "Employee [id=" + id + " name=" + firstname + " " + lastname + " salary =" + salary + "]";
+    return "Exercises1.Ex14.Employee [id=" + id + " name=" + firstname + " " + lastname + " salary =" + salary + "]";
   }
 
 }

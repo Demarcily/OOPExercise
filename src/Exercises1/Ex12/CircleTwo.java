@@ -1,3 +1,5 @@
+package Exercises1.Ex12;
+
 public class CircleTwo {
   private double radius;
 
@@ -26,6 +28,6 @@ public class CircleTwo {
   }
 
   public String toString() {
-    return "Circle [radius=" + radius + "]";
+    return "Exercises1.Ex11.Circle [radius=" + radius + "]";
   }
 }

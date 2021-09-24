@@ -1,3 +1,5 @@
+package Exercises1.Ex13;
+
 public class TestRectangle {
   public static void main(String[] args) {
     // Test constructors and toString()
