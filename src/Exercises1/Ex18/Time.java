@@ -43,16 +43,38 @@ public class Time {
   }
 
   public String toString() {
-    return "0" + hour + ":0" + minute + ":0" + second;
+    return String.format("%02d", hour) + ":" + String.format("%02d", minute) + ":" + String.format("%02d", second);
   }
 
   public Time nextSecond() {
     second = second + 1;
+    if (second >= 60) {
+      second -= 60;
+      minute += 1;
+      if (minute >= 60) {
+        minute -= 60;
+        hour += 1;
+        if (hour >= 24) {
+          hour -= 24;
+        }
+      }
+    }
     return this;
   }
 
   public Time previousSecond() {
     second = second - 1;
+    if (second < 0) {
+      second = 60 + second;
+      minute -= 1;
+      if (minute < 0) {
+        minute = 60 + minute;
+        hour -= 1;
+        if (hour < 0) {
+          hour = 24 + hour;
+        }
+      }
+    }
     return this;
   }
 
