@@ -8,5 +8,6 @@ public class TestBookTwo {
 
     BookTwo dummyBook = new BookTwo("Java for dummy", authors, 19.95, 99);
     System.out.println(dummyBook);
+    System.out.println(dummyBook.getAuthor()[0].getName());
   }
 }
