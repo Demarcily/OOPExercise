@@ -1,19 +1,19 @@
 package Exercises2.Ex22;
 
-public class Book {
+public class BookTwo {
   private String name;
-  private Author[] author;
+  private AuthorTwo[] author;
   private double price;
   private int qty = 0;
 
-  public Book(String name, Author[] author, double price) {
+  public BookTwo(String name, AuthorTwo[] author, double price) {
     this.name = name;
     this.author = author;
     this.price = price;
 
   }
 
-  public Book(String name, Author[] author, double price, int qty) {
+  public BookTwo(String name, AuthorTwo[] author, double price, int qty) {
     this.name = name;
     this.author = author;
     this.price = price;
@@ -23,7 +23,7 @@ public class Book {
   public String getName() {
     return name;
   }
-  public Author[] getAuthor() {
+  public AuthorTwo[] getAuthor() {
     return author;
   }
   public double getPrice() {
